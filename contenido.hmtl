@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido — Física CBIT</title>
+
+    <!-- Tipografía Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="contenido.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-contenido">
+            <a href="/" class="navbar-enlace">← Volver</a>
+            <span class="navbar-separador"></span>
+            <span class="navbar-marca">Física — CBIT U.E.N. Carlos Manuel Arrieta</span>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="contenedor contenedor-con-navbar">
+
+        <!-- Header del tema -->
+        <header class="tema-header">
+            <span class="tag tag-verde" id="tema-tag">Cargando…</span>
+            <h1 id="contenido-titulo">Cargando contenido…</h1>
+        </header>
+
+        <!-- Cuerpo del contenido teórico -->
+        <section id="contenido-body" class="contenido-body">
+            <div class="loading-spinner">Cargando contenido…</div>
+        </section>
+
+        <!-- Acciones al final -->
+        <section id="contenido-actions" class="contenido-actions">
+            <!-- Aquí aparecerá el botón de "Marcar como leído" -->
+        </section>
+
+    </main>
+
+</body>
+</html>
