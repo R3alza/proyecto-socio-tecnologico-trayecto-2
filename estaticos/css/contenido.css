@@ -1,0 +1,288 @@
+/* ============================================================
+   CONTENIDO.CSS — Página de contenido teórico
+   Depende de: base.css
+   ============================================================ */
+
+/* ========== HEADER DEL TEMA ========== */
+.tema-header {
+    margin-bottom: var(--esp-8);
+    padding-bottom: var(--esp-5);
+    border-bottom: 1px solid var(--gris-200);
+}
+
+.tema-header h1 {
+    font-size: var(--texto-3xl);
+    font-weight: var(--peso-bold);
+    color: var(--gris-900);
+    margin-top: var(--esp-3);
+    letter-spacing: -0.02em;
+}
+
+/* ========== SECCIONES DE TEORÍA ========== */
+.teoria-seccion {
+    background: white;
+    border: 1px solid var(--gris-200);
+    border-radius: var(--radio-md);
+    padding: var(--esp-8);
+    margin-bottom: var(--esp-5);
+    box-shadow: var(--sombra-sm);
+}
+
+.teoria-seccion h2 {
+    font-size: var(--texto-2xl);
+    font-weight: var(--peso-semi);
+    color: var(--verde-800);
+    margin-bottom: var(--esp-4);
+    padding-bottom: var(--esp-3);
+    border-bottom: 1px solid var(--gris-100);
+}
+
+.teoria-seccion h3 {
+    font-size: var(--texto-lg);
+    font-weight: var(--peso-semi);
+    color: var(--verde-700);
+    margin: var(--esp-6) 0 var(--esp-3);
+}
+
+.teoria-seccion p {
+    color: var(--gris-700);
+    font-size: var(--texto-base);
+    line-height: 1.7;
+    margin-bottom: var(--esp-3);
+}
+
+/* ========== BLOQUES DE CONTENIDO ========== */
+.contenido-bloque {
+    background: white;
+    border: 1px solid var(--gris-200);
+    border-radius: var(--radio-md);
+    padding: var(--esp-6);
+    margin-bottom: var(--esp-4);
+    box-shadow: var(--sombra-sm);
+    animation: fadeIn 200ms ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.bloque-header {
+    display: flex;
+    align-items: baseline;
+    gap: var(--esp-3);
+    margin-bottom: var(--esp-4);
+    padding-bottom: var(--esp-3);
+    border-bottom: 1px solid var(--gris-100);
+}
+
+.bloque-numero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    padding: 0 var(--esp-2);
+    background: var(--verde-800);
+    color: white;
+    font-size: var(--texto-xs);
+    font-weight: var(--peso-semi);
+    border-radius: var(--radio-sm);
+    flex-shrink: 0;
+}
+
+.bloque-titulo {
+    font-size: var(--texto-lg);
+    font-weight: var(--peso-semi);
+    color: var(--gris-900);
+    margin: 0;
+}
+
+.bloque-texto {
+    color: var(--gris-700);
+    line-height: 1.7;
+    font-size: var(--texto-base);
+}
+
+.bloque-texto p {
+    margin-bottom: var(--esp-3);
+}
+
+.bloque-texto strong {
+    color: var(--verde-800);
+    font-weight: var(--peso-semi);
+}
+
+.bloque-texto ul,
+.bloque-texto ol {
+    margin: var(--esp-3) 0 var(--esp-3) var(--esp-6);
+}
+
+.bloque-texto li {
+    margin-bottom: var(--esp-2);
+    color: var(--gris-700);
+}
+
+.bloque-imagen {
+    width: 100%;
+    max-width: 600px;
+    border-radius: var(--radio-md);
+    border: 1px solid var(--gris-200);
+    margin-top: var(--esp-4);
+}
+
+/* ========== CAJA DE FÓRMULAS ========== */
+.formula-box {
+    background: var(--gris-50);
+    border-left: 4px solid var(--verde-700);
+    border-radius: var(--radio-sm);
+    padding: var(--esp-5) var(--esp-6);
+    margin: var(--esp-5) 0;
+}
+
+.formula-box ol {
+    margin-left: var(--esp-6);
+}
+
+.formula-box li {
+    margin-bottom: var(--esp-3);
+    color: var(--gris-700);
+    font-size: var(--texto-base);
+    line-height: 1.6;
+}
+
+/* Fórmula destacada (monoespaciada) */
+.formula {
+    background: var(--gris-900);
+    color: #d1fae5;
+    padding: var(--esp-4) var(--esp-6);
+    border-radius: var(--radio-sm);
+    font-family: var(--fuente-mono);
+    font-size: var(--texto-lg);
+    text-align: center;
+    margin: var(--esp-4) 0;
+    letter-spacing: 0.02em;
+}
+
+/* ========== CAJA DE EJEMPLO ========== */
+.ejemplo-box {
+    background: var(--aviso-suave);
+    border-left: 4px solid var(--aviso);
+    border-radius: var(--radio-sm);
+    padding: var(--esp-5) var(--esp-6);
+    margin: var(--esp-5) 0;
+}
+
+.ejemplo-box h3 {
+    color: var(--aviso);
+    font-size: var(--texto-base);
+    font-weight: var(--peso-semi);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: var(--esp-3);
+}
+
+.ejemplo-box p {
+    color: var(--gris-700);
+    margin-bottom: var(--esp-3);
+}
+
+/* ========== GRID DE RAMAS ========== */
+.ramas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--esp-4);
+    margin-top: var(--esp-4);
+}
+
+.rama-card {
+    background: white;
+    border: 1px solid var(--gris-200);
+    border-radius: var(--radio-md);
+    padding: var(--esp-5);
+    transition: border-color var(--trans-normal);
+}
+
+.rama-card:hover {
+    border-color: var(--verde-600);
+}
+
+.rama-card h4 {
+    color: var(--verde-800);
+    font-size: var(--texto-base);
+    font-weight: var(--peso-semi);
+    margin-bottom: var(--esp-2);
+}
+
+.rama-card p {
+    color: var(--gris-700);
+    font-size: var(--texto-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ========== ACCIONES FINALES ========== */
+.contenido-actions {
+    margin-top: var(--esp-8);
+    padding: var(--esp-6);
+    background: white;
+    border: 1px solid var(--gris-200);
+    border-radius: var(--radio-md);
+    text-align: center;
+    box-shadow: var(--sombra-sm);
+}
+
+.mensaje-completado h3 {
+    color: var(--verde-800);
+    font-size: var(--texto-xl);
+    font-weight: var(--peso-semi);
+    margin-bottom: var(--esp-2);
+}
+
+.mensaje-completado p {
+    color: var(--gris-700);
+    margin-bottom: var(--esp-6);
+    font-size: var(--texto-base);
+}
+
+.completado-botones {
+    display: flex;
+    gap: var(--esp-3);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mensaje-leido {
+    color: var(--verde-800);
+    font-size: var(--texto-base);
+    font-weight: var(--peso-medio);
+}
+
+/* ========== ESTADO DE CARGA ========== */
+.loading-spinner {
+    text-align: center;
+    padding: var(--esp-16) var(--esp-6);
+    color: var(--gris-500);
+    font-size: var(--texto-sm);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .teoria-seccion,
+    .contenido-bloque {
+        padding: var(--esp-4);
+    }
+
+    .tema-header h1 {
+        font-size: var(--texto-2xl);
+    }
+
+    .ramas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .formula {
+        font-size: var(--texto-base);
+        padding: var(--esp-3) var(--esp-4);
+    }
+}
